@@ -1,1 +1,18 @@
+# Secrets 
+.env
+.env.*.local
+
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Test output
+coverage/
+
+# Logs
+*.log
+
+# OS
 .DS_Store
