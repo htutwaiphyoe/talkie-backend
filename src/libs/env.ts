@@ -14,7 +14,7 @@ if (!parsed.success) {
   process.exit(1);
 }
 
-export const config = Object.freeze({
+export const env = Object.freeze({
   ...parsed.data,
   isProd: parsed.data.NODE_ENV === "production",
   isTest: parsed.data.NODE_ENV === "test",
