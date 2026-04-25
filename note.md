@@ -14,3 +14,14 @@ git commit -m "chore: untrack <file>"
 | --- | --- | --- |
 | `.env` | real, local | ignored |
 | `.env.example` | same keys, safe values | committed |
+
+## Logging
+
+```ts
+pino({
+  level: isProd ? "info" : "debug",
+  redact: ["req.headers.authorization", "*.password", "*.token"],
+});
+```
+
+JSON in prod, `pino-pretty` in dev. Redact catches secrets from accidental `logger.info({ req })` — logs are permanent.

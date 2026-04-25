@@ -1,6 +1,7 @@
 import express from "express";
 
 import { env } from "@/libs/env";
+import { logger } from "@/libs/logger";
 
 const app = express();
 
@@ -13,5 +14,5 @@ app.get("/health", (_req, res) => {
 });
 
 app.listen(env.PORT, () => {
-  console.log(`Server is listening on port: ${env.PORT}`);
+  logger.info(`Server is listening on port: ${env.PORT}`);
 });
