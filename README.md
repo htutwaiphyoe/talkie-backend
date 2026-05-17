@@ -22,6 +22,8 @@ bun dev
 | `bun start` | Start |
 | `bun run typecheck` | Type check |
 | `bun test` | Run tests |
+| `bun run db:up` | Start Postgres |
+| `bun run db:down` | Stop Postgres |
 
 ## Structure
 
