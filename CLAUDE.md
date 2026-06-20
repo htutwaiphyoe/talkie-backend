@@ -1,0 +1,6 @@
+# talkie-backend
+
+## Rules
+
+- Always talk in ASD-STE100 Simplified Technical English.
+- Always read CONTEXT.md files, and use their ubiquitous language.
